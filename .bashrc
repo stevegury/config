@@ -37,4 +37,5 @@ branch_color ()
 }
 
 PS1='[\[$(branch_color)\]$(parse_git_branch)\[${c_sgr0}\]] \u\[${c_gray}\]@\[${c_sgr0}\]\[${c_blue}\]\w\[${c_sgr0}\]: '
-
+shopt -s histappend
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function

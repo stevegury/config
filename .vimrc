@@ -8,3 +8,8 @@ set hls
 set lbr
 set bg=dark
 colorscheme delek
+
+if has("mouse")
+    set mouse=a
+endif
+
