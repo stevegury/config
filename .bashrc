@@ -36,6 +36,14 @@ branch_color ()
   echo -ne $color
 }
 
+# BASH settings
 PS1='[\[$(branch_color)\]$(parse_git_branch)\[${c_sgr0}\]] \u\[${c_gray}\]@\[${c_sgr0}\]\[${c_blue}\]\w\[${c_sgr0}\]: '
-shopt -s histappend
+shopt -s histappend                     # merge history from multiple terminal
+unset HISTFILESIZE                      # no file size limit
+HISTSIZE=1000000                        # bigger history limit
+HISTCONTROL=ignoreboth                  # ignore cmd that start with a space and duplicate cmd
+HISTIGNORE='ls:bg:fg:history'
+PROMPT_COMMAND='history -a; history -n' # store history immediately
+
+# RVM mandatory
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
