@@ -45,7 +45,8 @@ branch_color ()
 #
 # the second argument is the maximum allowed
 # length including the '/'s and ...
-#
+# 
+# from http://hbfs.wordpress.com/2009/09/01/short-pwd-in-bash-prompts/
 shorten_path()
  {
   x=${1}
