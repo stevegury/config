@@ -24,7 +24,7 @@ branch_color ()
   if git rev-parse --git-dir >/dev/null 2>&1
   then
     color=""
-    if git diff --quiet 2>/dev/null >&2 
+    if git diff --quiet 2>/dev/null >&2
     then
       color="${c_green}"
     else
@@ -45,7 +45,7 @@ branch_color ()
 #
 # the second argument is the maximum allowed
 # length including the '/'s and ...
-# 
+#
 # from http://hbfs.wordpress.com/2009/09/01/short-pwd-in-bash-prompts/
 shorten_path()
  {
@@ -67,7 +67,7 @@ shorten_path()
           fi
       done
       pos=(${pos[@]} $len)
-   
+
       # we have the '/'s, let's find the
       # left-most that doesn't break the
       # length limit
@@ -77,7 +77,7 @@ shorten_path()
       do
           i=$((i+1))
       done
- 
+
       # let us check if it's OK to
       # print the whole thing
       #
@@ -88,7 +88,7 @@ shorten_path()
           # so no need for ...
           #
           echo ${x}
-       
+
       elif [ ${pos[i]} == $len ]
       then
           # constraints are broken because
@@ -116,7 +116,6 @@ unset HISTFILESIZE                      # no file size limit
 HISTSIZE=1000000                        # bigger history limit
 HISTCONTROL=ignoreboth                  # ignore cmd that start with a space and duplicate cmd
 HISTIGNORE='ls:bg:fg:history'
-PROMPT_COMMAND='history -a; history -n' # store history immediately
 
 # RVM mandatory
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function

@@ -20,6 +20,9 @@ export SBT_PROXY_REPO=http://artifactory.local.twitter.com/repo/
 
 export EDITOR='subl -w'
 
+export GOROOT=/usr/local/go
+export PATH=$PATH:$GOROOT/bin
+
 source ~/.bashrc
 
 [[ -s "/Users/stevegury/.rvm/scripts/rvm" ]] && source "/Users/stevegury/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
