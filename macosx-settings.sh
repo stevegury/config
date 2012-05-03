@@ -57,7 +57,7 @@ echo "Set a blazingly fast keyboard repeat rate"
 defaults write NSGlobalDomain KeyRepeat -int 0.2
 
 echo "Set a shorter Delay until key repeat"
-defaults write NSGlobalDomain InitialKeyRepeat -int 12
+defaults write NSGlobalDomain InitialKeyRepeat -int 15
 
 echo "Display full POSIX path as Finder window title"
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
@@ -76,3 +76,6 @@ echo "Enable snap-to-grid for desktop icons"
 
 echo "Enable tap to click (Trackpad)"
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+
+echo "Speed-up Desktop switching"
+defaults write com.apple.dock expose-animation-duration -float 0.2
