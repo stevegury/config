@@ -1,2 +1,2 @@
 #!/bin/sh
-subl -w $*
+subl -w -n $*
