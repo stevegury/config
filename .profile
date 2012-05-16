@@ -2,11 +2,11 @@
 export PATH=/usr/local/sbin:/usr/local/bin:$PATH
 
 # Java
-export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home
-export PATH=$JAVA_HOME/bin:$PATH
+export JAVA_HOME=$(/usr/libexec/java_home)
+export PATH=$PATH:$JAVA_HOME/bin
 
 # Python
-export PATH=~/code/ipython-0.12:$PATH
+export PATH=$PATH:~/code/ipython-0.12
 
 # Go language
 export GOROOT=/usr/local/go
@@ -31,7 +31,7 @@ export SBT_PROXY_REPO=http://artifactory.local.twitter.com/repo/
 export EDITOR='subl_wait'
 
 # Dropbox bin
-export PATH=~/Dropbox/bin:$PATH
+export PATH=$PATH:~/Dropbox/bin
 
 # source .bashrc
 source ~/.bashrc
