@@ -8,3 +8,6 @@ cp -r \
   Library \
   bin \
   ~
+
+source ~/.profile
+source ~/.bashrc
