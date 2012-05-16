@@ -6,6 +6,7 @@ cairo
 cmake
 ctags
 dos2unix
+ffmpeg
 gdbm
 gdk-pixbuf
 gettext
