@@ -1,0 +1,57 @@
+#!/bin/sh
+
+# Formatting constants
+BLACK=`tput setaf 0`
+RED=`tput setaf 1`
+GREEN=`tput setaf 2`
+YELLOW=`tput setaf 3`
+BLUE=`tput setaf 4`
+MAGENTA=`tput setaf 5`
+CYAN=`tput setaf 6`
+WHITE=`tput setaf 7`
+RESET=`tput sgr0`
+
+PATTERN=$1
+shift
+
+# default color is red
+COLOR=$RED
+
+while [ $# -gt 0 ]; do
+  case "$1" in
+    black)
+      COLOR=$BLACK
+      shift
+      ;;
+    red)
+      COLOR=$RED
+      shift
+      ;;
+    green)
+      COLOR=$GREEN
+      shift
+      ;;
+    yellow)
+      COLOR=$YELLOW
+      shift
+      ;;
+    blue)
+      COLOR=$BLUE
+      shift
+      ;;
+    magenta)
+      COLOR=$MAGENTA
+      shift
+      ;;
+    cyan)
+      COLOR=$CYAN
+      shift
+      ;;
+    white)
+      COLOR=$WHITE
+      shift
+      ;;
+  esac
+done
+
+sed "s/\($PATTERN\)/${COLOR}\1${RESET}/g"
