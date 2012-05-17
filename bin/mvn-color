@@ -11,10 +11,14 @@ CYAN=`tput setaf 6`
 WHITE=`tput setaf 7`
 RESET=`tput sgr0`
 
-mvn $@ | sed -e "s/\(\[ERROR\].*$\)/${RED}\1${RESET}/g" \
+mvn $@ | sed \
+  -e "s/\[ERROR\]\(.*\/\)\(.*\.scala:[0-9]*\)\(.*\)/${RED}\1${BLUE}\2${RED}\3${RESET}/g" \
+  -e "s/\(\[ERROR\].*$\)/${RED}\1${RESET}/g" \
   -e "s/\(\[WARNING\].*$\)/${YELLOW}\1${RESET}/g" \
+  -e "s/\(BUILD FAILURE\)/${RED}\1${RESET}/g" \
   -e "s/\(FAILURE\)/${RED}\1${RESET}/g" \
   -e "s/\(SKIPPED\)/${BLUE}\1${RESET}/g" \
   -e "s/\(SUCCESS\)/${GREEN}\1${RESET}/g" \
   -e "s/\[INFO\] \(Building .*$\)/\[INFO\] ${BLUE}\1${RESET}/g" \
   -e "s/\[INFO\] \(------------------------------------------------------------------------\)/\[INFO\] ${BLUE}\1${RESET}/g"
+echo ''
