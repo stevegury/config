@@ -18,6 +18,7 @@ mvn $@ | sed \
   -e "s/\(BUILD FAILURE\)/${RED}\1${RESET}/g" \
   -e "s/\(FAILURE\)/${RED}\1${RESET}/g" \
   -e "s/\(SKIPPED\)/${BLUE}\1${RESET}/g" \
+  -e "s/\(BUILD SUCCESS\)/${GREEN}\1${RESET}/g" \
   -e "s/\(SUCCESS\)/${GREEN}\1${RESET}/g" \
   -e "s/\[INFO\] \(Building .*$\)/\[INFO\] ${BLUE}\1${RESET}/g" \
   -e "s/\[INFO\] \(------------------------------------------------------------------------\)/\[INFO\] ${BLUE}\1${RESET}/g"
