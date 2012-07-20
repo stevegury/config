@@ -54,4 +54,4 @@ while [ $# -gt 0 ]; do
   esac
 done
 
-sed --unbuffered "s/\($PATTERN\)/${COLOR}\1${RESET}/g"
+sed "s/\($PATTERN\)/${COLOR}\1${RESET}/g"
