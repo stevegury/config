@@ -37,7 +37,6 @@ libevent
 libffi
 libgcrypt
 libgpg-error
-libiconv
 libnet
 libogg
 libtasn1

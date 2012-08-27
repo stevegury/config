@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # install brew
-/usr/bin/ruby -e "$(/usr/bin/curl -fsSL https://raw.github.com/mxcl/homebrew/master/Library/Contributions/install_homebrew.rb)"
+#ruby <(curl -fsSkL raw.github.com/mxcl/homebrew/go)
 
 # install packages
 brew update
