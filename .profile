@@ -25,6 +25,7 @@ alias b='cd $BIRDCAGE_HOME'
 alias f='cd $BIRDCAGE_HOME/finagle'
 alias s='cd $SCIENCE_HOME'
 alias mvn=mvn-color
+alias ocaml='rlwrap ocaml'
 
 export SBT_PROXY_REPO=http://artifactory.local.twitter.com/repo/
 
