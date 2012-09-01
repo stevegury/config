@@ -35,6 +35,9 @@ export EDITOR='subl_wait'
 # Dropbox bin
 export PATH=$PATH:~/Dropbox/bin
 
+# local bin PATH
+export PATH=$PATH:~/bin
+
 # source .bashrc
 source ~/.bashrc
 
