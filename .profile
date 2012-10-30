@@ -12,8 +12,9 @@ export PATH=$PATH:~/code/ipython
 export GOROOT=/usr/local/go
 export PATH=$PATH:$GOROOT/bin
 
-# ls, ll
+# ls, ll, grep
 export CLICOLOR=1
+export GREP_OPTIONS='--color=always'
 alias ll='ls -lh'
 
 # Twitter standard directories
@@ -40,12 +41,6 @@ export PATH=$PATH:~/bin
 
 # source .bashrc
 source ~/.bashrc
-
-# run custom startup scripts
-for s in ~/bin/startup/*
-do
-  [ -x $s ] && $s
-done
 
 # Load RVM into a shell session *as a function*
 [[ -s "/Users/stevegury/.rvm/scripts/rvm" ]] && source "/Users/stevegury/.rvm/scripts/rvm"

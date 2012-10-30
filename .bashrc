@@ -36,7 +36,7 @@ branch_color ()
   echo -ne $color
 }
 
-# BASH settings
+# BASH settings (declare terminal as xterm-256color)
 PS1='[\[$(branch_color)\]$(parse_git_branch)\[${c_sgr0}\]] \[${c_blue}\]\w\[${c_sgr0}\]: '
 shopt -s histappend                     # merge history from multiple terminal
 unset HISTFILESIZE                      # no file size limit
