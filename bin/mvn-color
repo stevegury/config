@@ -11,7 +11,8 @@ CYAN=`tput setaf 6`
 WHITE=`tput setaf 7`
 RESET=`tput sgr0`
 
-mvn $@ | sed \
+mvn $@ | grep -v "^\[debug\] execute contextualize$" | \
+  sed \
   -e "s/\[ERROR\]\(.*\/\)\(.*\.scala:[0-9]*\)\(.*\)/${RED}\1${BLUE}\2${RED}\3${RESET}/g" \
   -e "s/\(\[ERROR\].*$\)/${RED}\1${RESET}/g" \
   -e "s/\(Errors: [1-9][0-9]*\)/${RED}\1${RESET}/g" \
