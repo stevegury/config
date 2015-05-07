@@ -1,8 +1,13 @@
 {
+	"in_process_packages":
+	[
+	],
 	"installed_packages":
 	[
-		"Clipboard History",
+		"HexViewer",
 		"Package Control",
-		"Pretty JSON"
+		"Rust",
+		"RustAutoComplete",
+		"Theme - Spacegray"
 	]
 }
