@@ -1,0 +1,30 @@
+1Password 5.app
+Adium.app
+AirDroid.app
+Dropbox.app
+Eclipse.app
+Firefox.app
+Flux.app
+Google Chrome.app
+HandBrake.app
+Hex Fiend.app
+IntelliJ IDEA 14 CE.app
+iStat Menus.app
+iStat Menus.app
+iTerm.app
+Microsoft Silverlight
+RescueTime.app
+Sequel Pro.app
+Skype.app
+Spectacle.app
+Spotify.app
+Sublime Text.app
+TeX
+The Unarchiver.app
+VirtualBox.app
+VLC.app
+Wireshark.app
+Wolfram CDF Player.app
+Xcode.app
+Xee.app
+YourKit_Java_Profiler_2015_build_15046.app
